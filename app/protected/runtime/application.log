@@ -1,0 +1,8 @@
+2015/09/11 04:45:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\wamp\www\jardin\yii-framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\jardin\yii-framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\wamp\www\jardin\yii-framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\jardin\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/jardin/gii
+---
