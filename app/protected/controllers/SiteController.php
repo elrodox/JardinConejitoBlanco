@@ -43,7 +43,36 @@ class SiteController extends Controller
 		// using the default layout 'protected/views/layouts/main.php'
 		$this->render('quienes_somos');
 	}
-
+	public function actionOrganigrama()
+	{
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		$this->render('organigrama');
+	}
+		public function actionProyectoEducativo()
+	{
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		$this->render('proyecto_educativo');
+	}
+	public function actionPlanesEmergencia()
+	{
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		$this->render('planes_emergencia');
+	}
+		public function actionExperienciaPedagogica()
+	{
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		$this->render('experiencia_pedagogica');
+	}
+		public function actionContactoUbicacion()
+	{
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		$this->render('contacto_ubicacion');
+	}
 	/**
 	 * This is the action to handle external exceptions.
 	 */

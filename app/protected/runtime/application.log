@@ -6,3 +6,713 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/jardin/gii
 ---
+2015/10/21 05:43:02 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "site/navbar".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:878
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(782): CController->renderPartial('site/navbar', NULL, true)
+#1 /home/ubuntu/workspace/app/protected/views/layouts/main.php(19): CController->render('site/navbar')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CBaseController.php(126): require('/home/ubuntu/wo...')
+#3 /home/ubuntu/workspace/app/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/ubuntu/wo...', Array, true)
+#4 /home/ubuntu/workspace/app/yii-framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/ubuntu/wo...', Array, true)
+#5 /home/ubuntu/workspace/app/yii-framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 /home/ubuntu/workspace/app/yii-framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 /home/ubuntu/workspace/app/yii-framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /home/ubuntu/workspace/app/yii-framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /home/ubuntu/workspace/app/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#10 /home/ubuntu/workspace/app/yii-framework/web/CBaseController.php(126): require('/home/ubuntu/wo...')
+#11 /home/ubuntu/workspace/app/yii-framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/ubuntu/wo...', Array, true)
+#12 /home/ubuntu/workspace/app/yii-framework/web/CController.php(784): CBaseController->renderFile('/home/ubuntu/wo...', Array, true)
+#13 /home/ubuntu/workspace/app/protected/controllers/SiteController.php(32): CController->render('index')
+#14 /home/ubuntu/workspace/app/yii-framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /home/ubuntu/workspace/app/yii-framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/ubuntu/workspace/app/yii-framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /home/ubuntu/workspace/app/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('')
+#19 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/app/
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/
+---
+2015/10/21 06:15:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "planEmergencia".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('planEmergencia')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('planEmergencia')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/planEmerge...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/?r=site/planEmergencia
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/?r=site/proEducativo
+---
+2015/10/21 06:26:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "static-pages".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('static-pages')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('static-pages')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/static-pag...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/?r=site/static-pages&view=misionVision
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/
+---
+2015/10/21 06:27:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "static-pages".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('static-pages')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('static-pages')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/static-pag...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/?r=site/static-pages&view=misionVision
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/
+---
+2015/10/21 06:27:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "static-pages".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('static-pages')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('static-pages')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/static-pag...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/?r=site/static-pages&view=mision_vision
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/?r=site/static-pages&view=misionVision
+---
+2015/10/21 06:27:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "static-pages".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('static-pages')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('static-pages')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/static-pag...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/?r=site/static-pages&view=mision_vision
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/?r=site/static-pages&view=misionVision
+---
+2015/10/21 06:27:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "static-pages".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('static-pages')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('static-pages')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/static-pag...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/?r=site/static-pages&view=mision_vision
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/?r=site/static-pages&view=misionVision
+---
+2015/10/21 06:27:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "static_pages".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('static_pages')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('static_pages')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/static_pag...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/?r=site/static_pages&view=mision_vision
+---
+2015/10/21 06:28:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pages".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('pages')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('pages')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/pages')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/?r=site/pages&view=mision_vision
+---
+2015/10/21 06:30:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pages".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('pages')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('pages')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/pages')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/?r=site/pages&view=organigrama
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/
+---
+2015/10/21 06:31:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pages".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('pages')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('pages')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/pages')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/?r=site/pages&view=organigrama
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/
+---
+2015/10/21 06:32:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "quienesSomos" was not found.' in /home/ubuntu/workspace/app/yii-framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/actions/CViewAction.php(123): CViewAction->resolveView('quienesSomos')
+#1 /home/ubuntu/workspace/app/yii-framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /home/ubuntu/workspace/app/yii-framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /home/ubuntu/workspace/app/yii-framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /home/ubuntu/workspace/app/yii-framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('page')
+#6 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/app/?r=site/page&view=quienesSomos
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/?r=site/page&view=mision_vision
+---
+2015/10/21 06:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "navbar".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('navbar')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('navbar')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/navbar')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/navbar
+---
+2015/10/21 06:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('js')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('js')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/js/lib/boo...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/js/lib/bootstrap.min.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/navbar
+---
+2015/10/21 06:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('js')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('js')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/js/lib/jqu...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/js/lib/jquery-2.1.4.min.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/navbar
+---
+2015/10/21 06:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('js')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('js')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/js/layout/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/js/layout/main.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/navbar
+---
+2015/10/21 06:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('js')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('js')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/js/app.js')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/js/app.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/navbar
+---
+2015/10/21 06:38:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "navbar".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('navbar')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('navbar')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/navbar')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/navbar
+---
+2015/10/21 06:38:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('js')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('js')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/js/app.js')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/js/app.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/navbar
+---
+2015/10/21 06:38:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('js')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('js')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/js/lib/jqu...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/js/lib/jquery-2.1.4.min.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/navbar
+---
+2015/10/21 06:38:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('js')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('js')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/js/layout/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/js/layout/main.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/navbar
+---
+2015/10/21 06:38:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('js')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('js')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/js/lib/boo...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/js/lib/bootstrap.min.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/navbar
+---
+2015/10/21 06:38:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('js')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('js')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/js/lib/jqu...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/js/lib/jquery-2.1.4.min.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/page?view=mision_vision
+---
+2015/10/21 06:38:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('js')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('js')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/js/lib/boo...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/js/lib/bootstrap.min.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/page?view=mision_vision
+---
+2015/10/21 06:38:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('js')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('js')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/js/app.js')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/js/app.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/page?view=mision_vision
+---
+2015/10/21 06:38:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('js')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('js')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/js/layout/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/js/layout/main.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/page?view=mision_vision
+---
+2015/10/21 06:38:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('img')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('img')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/banner...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/img/banner-jardin-mision.jpg
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/page?view=mision_vision
+---
+2015/10/21 06:38:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('img')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('img')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/banner...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/img/banner-jardin-mision.jpg
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/page?view=mision_vision
+---
+2015/10/21 06:38:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/page')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/page?view=quienes_somos
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/page?view=mision_vision
+---
+2015/10/21 06:38:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/js/li...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/js/lib/jquery-2.1.4.min.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/page?view=quienes_somos
+---
+2015/10/21 06:38:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/js/li...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/js/lib/bootstrap.min.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/page?view=quienes_somos
+---
+2015/10/21 06:38:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/js/la...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/js/layout/main.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/page?view=quienes_somos
+---
+2015/10/21 06:38:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/js/ap...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/js/app.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/page?view=quienes_somos
+---
+2015/10/21 06:38:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/page?view=mision_vision
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/page?view=quienes_somos
+---
+2015/10/21 06:38:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/js/lib/jquery-2.1.4.min.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/page?view=mision_vision
+---
+2015/10/21 06:38:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/js/lib/bootstrap.min.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/page?view=mision_vision
+---
+2015/10/21 06:38:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/js/layout/main.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/page?view=mision_vision
+---
+2015/10/21 06:38:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/js/app.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/page?view=mision_vision
+---
+2015/10/21 06:38:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/site/page?view=mision_vision
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/page?view=mision_vision
+---
+2015/10/21 06:38:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/site/js/lib/jquery-2.1.4.min.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/site/page?view=mision_vision
+---
+2015/10/21 06:38:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/site/js/lib/bootstrap.min.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/site/page?view=mision_vision
+---
+2015/10/21 06:38:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/site/js/layout/main.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/site/page?view=mision_vision
+---
+2015/10/21 06:38:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/site/js/app.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/site/page?view=mision_vision
+---
+2015/10/21 06:38:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/site/site/page?view=quienes_somos
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/site/page?view=mision_vision
+---
+2015/10/21 06:38:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/site/site/js/lib/jquery-2.1.4.min.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/site/site/page?view=quienes_somos
+---
+2015/10/21 06:38:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/site/site/js/lib/bootstrap.min.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/site/site/page?view=quienes_somos
+---
+2015/10/21 06:38:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/site/site/js/layout/main.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/site/site/page?view=quienes_somos
+---
+2015/10/21 06:38:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/site/site/js/app.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/site/site/page?view=quienes_somos
+---
+2015/10/21 06:38:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/site/site/site/page?view=organigrama
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/site/site/page?view=quienes_somos
+---
+2015/10/21 06:38:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/site/site/site/js/lib/bootstrap.min.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/site/site/site/page?view=organigrama
+---
+2015/10/21 06:38:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/site/site/site/js/lib/jquery-2.1.4.min.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/site/site/site/page?view=organigrama
+---
+2015/10/21 06:38:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/site/site/site/js/layout/main.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/site/site/site/page?view=organigrama
+---
+2015/10/21 06:38:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/site/site/site/js/app.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/site/site/site/page?view=organigrama
+---
+2015/10/21 06:38:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/site/site/site/site/page?view=proyecto_educativo
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/site/site/site/page?view=organigrama
+---
+2015/10/21 06:38:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/site/site/site/site/js/lib/bootstrap.min.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/site/site/site/site/page?view=proyecto_educativo
+---
+2015/10/21 06:38:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/site/site/site/site/js/lib/jquery-2.1.4.min.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/site/site/site/site/page?view=proyecto_educativo
+---
+2015/10/21 06:38:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/site/site/site/site/js/layout/main.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/site/site/site/site/page?view=proyecto_educativo
+---
+2015/10/21 06:38:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('site')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('site')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/site/site/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/site/site/site/site/site/site/js/app.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/site/site/site/site/site/site/page?view=proyecto_educativo
+---
+2015/10/21 06:38:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('js')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('js')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/js/lib/jqu...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/js/lib/jquery-2.1.4.min.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/page?view=proyecto_educativo
+---
+2015/10/21 06:38:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('js')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('js')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/js/lib/boo...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/js/lib/bootstrap.min.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/page?view=proyecto_educativo
+---
+2015/10/21 06:38:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('js')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('js')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/js/layout/...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/js/layout/main.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/page?view=proyecto_educativo
+---
+2015/10/21 06:38:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('js')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('js')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/js/app.js')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/js/app.js
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/page?view=proyecto_educativo
+---
+2015/10/21 06:38:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in /home/ubuntu/workspace/app/yii-framework/web/CController.php:483
+Stack trace:
+#0 /home/ubuntu/workspace/app/yii-framework/web/CController.php(270): CController->missingAction('img')
+#1 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(282): CController->run('img')
+#2 /home/ubuntu/workspace/app/yii-framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/banner...')
+#3 /home/ubuntu/workspace/app/yii-framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /home/ubuntu/workspace/app/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/app/site/img/banner-proyecto-educativo.jpg
+HTTP_REFERER=https://jardinconejitoblanco-elrodox.c9.io/app/site/page?view=proyecto_educativo
+---
