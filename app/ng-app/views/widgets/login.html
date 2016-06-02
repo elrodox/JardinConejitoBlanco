@@ -1,0 +1,33 @@
+    <div class="panel panel-primary">
+        <div class="panel-body">
+           
+            <div ng-hide="$root.$storage.currentUser.isEducadora || $root.$storage.currentUser.isParvulo">
+                <form name="loginForm" class="form-inline" role="form" ng-controller="UsuarioController" ng-submit="login()">
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                          <input id="rut" ng-model="datosLogin.rut" type="username" class="form-control" name="username" placeholder="RUT (sin dígito verificador)" required>                                        
+                      </div>
+            
+                      <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                          <input id="password" ng-model="datosLogin.password" type="password" class="form-control" name="password" placeholder="Contraseña" required>                                        
+                      </div>
+                        
+                      <button type="submit" class="btn btn-primary">Ingresar</button>
+                </form>
+                <a href="#/password-recovery" style="margin-top:10px">¿Olvidaste tu contraseña?</a>
+            </div>
+            <div ng-show="$root.$storage.currentUser.isEducadora || $root.$storage.currentUser.isParvulo">
+                <form class="form-inline" role="form" ng-controller="UsuarioController" ng-submit="logout()" >
+                    
+                    <div class="clearfix"> 
+                        <a href="#{{$root.$storage.currentUser.dashboardLink}}" class="inline" style="margin-right:10px">
+                            <strong>{{$root.$storage.currentUser.nombre}}</strong></a> 
+                        <div class="btn-group inline pull-right" data-toggle="buttons-checkbox"> 
+                          <button type="submit" class="btn btn-primary pull-right">Salir</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

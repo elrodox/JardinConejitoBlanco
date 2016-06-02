@@ -16,13 +16,14 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul id="main-nav-link-group" class="nav navbar-nav">
         <!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
-        <li id="mision-vision-nav-link"><a href="?r=site/page&view=mision_vision">Misión y Visión</a></li>
-        <li id="quienes-somos-nav-link"><a href="?r=site/page&view=quienes_somos">¿Quienes Somos?</a></li>
-        <li id="organigrama-nav-link"><a href="?r=site/page&view=organigrama">Organigrama</a></li>
-        <li id="proyecto-educativo-nav-link"><a href="?r=site/page&view=proyecto_educativo">Proyecto Educativo</a></li>
-        <li id="planes-emergencia-nav-link"><a href="?r=site/page&view=planes_emergencia">Planes de Emergencia</a></li>
-        <li id="experiencia-pedadogica-nav-link"><a href="?r=site/page&view=experiencia_pedagogica">Experiencia Pedagogica</a></li>
-        <li id="contacto-ubicacion-nav-link"><a href="?r=site/page&view=contacto_ubicacion">Contacto y Ubicacion</a></li>
+        <li id="mision-vision-nav-link"><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/page?view=mision_vision">Misión y Visión</a></li>
+        <li id="quienes-somos-nav-link"><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/page?view=quienes_somos">¿Quienes Somos?</a></li>
+        <li id="organigrama-nav-link"><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/page?view=organigrama">Organigrama</a></li>
+        <li id="proyecto-educativo-nav-link"><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/page?view=proyecto_educativo">Proyecto Educativo</a></li>
+        <li id="planes-emergencia-nav-link"><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/page?view=planes_emergencia">Planes de Emergencia</a></li>
+        <li id="experiencia-pedadogica-nav-link"><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/page?view=experiencia_pedagogica">Centro Padres</a></li>
+        <li id="centro-padres-nav-link"><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/page?view=centro_padres">Experiencia Pedagogica</a></li>
+        <li id="contacto-ubicacion-nav-link"><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/page?view=contacto_ubicacion">Contacto y Ubicacion</a></li>
         <!--<li><a href="#">Link</a></li>-->
         <!--<li class="dropdown">-->
         <!--  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->

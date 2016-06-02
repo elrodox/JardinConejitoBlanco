@@ -1,0 +1,127 @@
+<!doctype html>
+<html ng-app>
+	<!-- La pestana toma el nombre de este tittle -->
+	<title>
+		Jardin Conejito Blanco
+	</title>
+
+	<head>
+ 
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+		<script language="javascript" type="text/javascript">
+			function enviar(pagina){
+				document.nombreDelFormulario.action = pagina;
+				document.nombreDelFormulario.submit();
+			}
+		</script>
+
+	</head>
+	
+	<body>
+		
+		<div name="CerrarSesion" class="container">
+			<div class="row">
+				<div class="col-md-9"></div>
+				<div class="col-md-3">
+					<a class="btn btn-danger" href="/app/#/">Cerrar Sesion</a>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div name="tituloPagina" class="container">
+			<div class="row">
+				<div class="col-md-4">
+				</div>
+				<h1 class="col-md-5"></h1>	
+			</div>
+		</div>
+		
+		<div class="container">
+		    <div class="btn-toolbar">
+			<div class="btn-group btn-group-justified">
+				<ul class="col-md-3"></ul>
+				<ul class="col-md-9">
+					<dl></dl>
+					<dl><a class="btn btn-primary" href="">Pagina Principal</a></dl>
+					<dl><a class="btn btn-primary" href="">Asistencia</a></dl>
+					<dl><a class="btn btn-primary" href="">Imprevisto</a></dl>
+					<dl><a class="btn btn-primary" href="">Hito</a></dl>
+					<dl><a class="btn btn-primary" href="">Documentos</a></dl>
+					<dl><a class="btn btn-primary" href="">Comentarios</a></dl>
+				</ul>
+			</div>
+		</div>
+        </div>		
+		<div  class="container" >
+			<div class="row">
+				<div class="col-md-3">
+				    <img src="/prueba/imagenes/preescolar-importante-ninos-1.jpg" alt="HOLA" class="img-thumbnail">
+				    <p>Nombre: Juan</p>
+				    <p>Rut:17.800.000-4</p>
+				    <p>peso:20 kg</p>
+				    <p>talla:60 cm</p>
+				    <p>fecha nacimiento:08/10/2011</p>
+				    <p>correo:correo1@correo.cl</p>
+				</div>	
+				
+				<div class="col-md-7">
+				    <h3>Imprevisto</h3>
+				    <table class="table-bordered">
+						<thead>
+							<tr>
+					            <th>Fecha</th>
+					            <th>Descripcion</th>
+					            
+					        </tr>
+				        </thead>
+				        <tbody>
+				        	<tr>
+					            <td>17-08-205&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					            <td>Se cae por escaleras&nbsp;&nbsp;</td> 
+					            
+								
+					        </tr>
+					        <tr>
+					            <td>15-08-205&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					            <td>Golpe en la cabeza</td> &nbsp;&nbsp;
+					           
+					        </tr>
+					        <tr>
+					            <td>17-07-205&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					            <td>Refrio&nbsp;&nbsp;</td> 
+					           
+								
+					        </tr>
+					        <tr>
+					            <td>13-07-205&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					            <td>Fiebre y combulciones &nbsp;&nbsp;</td> 
+					           
+					        </tr>
+					        <tr>
+					            <td>12-07-205&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					            <td>Cuadro Viral &nbsp;&nbsp;</td> 
+					           
+					        </tr>
+					        <tr>
+					            <td>17-08-205&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					            <td>Licencia medica por 4 dias &nbsp;&nbsp; </td> 
+					            
+					        </tr>
+				        </tbody>
+					
+			
+						
+					
+				</div>
+			</div>
+		
+		
+		<!-- Esta parte llama a angular en este html -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		
+	</body>
+	
+</html>

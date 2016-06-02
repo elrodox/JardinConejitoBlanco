@@ -1,0 +1,40 @@
+<div name="tituloPagina" class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<img src="/prueba/imagenes/ej.png"  class="img-thumbnail">
+		</div>
+		<h1 class="col-md-5">Editar Noticia</h1>
+		<p class="col-md-5" style="text-align:justify;" >En esta seccion puedes editar noticias existentes que sean de interes para los apoderados, en el caso de 
+		esta sea importante, puedes utilizar el boton que esta al lado del titulo, con esto se mostrara entre las 
+		noticias importantes de la pagina.</p>
+	</div>
+</div>
+
+<div class="container">
+    <form class="form-horizontal" ng-submit="put()">
+	    <div class="row">
+    		<ul class="col-md-0"></ul>
+    		<ul class="col-md-9">
+    			<div class="form-group" ng-submit="enviar()">
+    			    <label for="titulo" class="col-md-1 control-label">Titulo</label>
+                    <div class="col-md-7">
+                        <input type="text" ng-model="noticia.titulo" class="form-control" placeholder="">
+                        <input type="checkbox" ng-model="noticia.importante" >Noticia Importante
+                    </div>
+                    <div class="form-group">
+            	        <textarea type="text" ng-model="noticia.descripcion" class="form-control" rows="4" placeholder=""></textarea>
+                    </div>
+                </div>
+            </ul>
+	    </div>
+        <div class="form-group">
+            <h3>Al seleccionar "Editar" tu noticia se subira inmediatamene</h3>
+            <div class="col-lg-3">
+                <input type="submit" class="btn btn-primary" value="Editar Noticia">
+            </div>
+            <div class="col-lg-3">
+                <a href="#/noticia-gestionar" class="btn btn-default" >Cancelar</a>
+            </div>
+        </div>
+	</form>
+</div>

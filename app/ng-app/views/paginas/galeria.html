@@ -1,0 +1,30 @@
+<div name="tituloPagina" class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<img src="/prueba/imagenes/Parvularia.jpg" alt="HOLA" class="img-thumbnail" style="width:200px;height:200px">
+		</div>
+		<h1 class="col-md-5">Galeria</h1>
+		<p class="col-md-5" style="text-align:justify;">Estas son las fotos tomadas en diferentes instacias por el Jardin Conejito Blanco</p>
+	</div>
+</div>
+
+<div class="col-xs-9">
+    <div class="row">
+        <input type="text" ng-model="search" class="form-control pull-right" placeholder="Buscar foto..." style="width: 300px">
+    </div>
+    <table class="table table-hover table-striped">
+        <thead>
+		    <tr>
+		        <th>Titulo foto</th>
+		        <th>Imagen</th>
+		    </tr>
+		</thead>
+        <tbody>
+            <tr ng-repeat="foto in fotos | filter:search">
+               
+                <td>{{foto.titulo}}</td>
+				<td> <img class=img-responsive ng-src="{{foto.link}}" HEIGHT=180></img> </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

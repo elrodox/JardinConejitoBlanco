@@ -1,0 +1,54 @@
+<div class="row">
+    <a href="#educadora-gestionar/" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span>Gestionar Información</a>
+</div>
+<br>
+<div class="row">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 id="titulo-formulario" class="panel-title">Nueva Educadora</h3>
+        </div>
+        <div class="panel-body">
+            <form class="form-horizontal" ng-submit="enviar()">
+                <div class="form-group">
+                    <label for="rutInput" class="col-lg-2 control-label">Rut</label>
+                    <div class="col-lg-10">
+                        <input id="rutInput" type="text" ng-model="educadora.rut_educadora" class="form-control" placeholder="Ej: 12321441-2" >
+                    </div>
+                </div>   
+                <div class="form-group">
+                    <label for="passwordInput" class="col-lg-2 control-label">Password</label>
+                    <div class="col-lg-10">
+                        <input id="passwordInput" type="password" ng-model="educadora.password" class="form-control" placeholder="*******" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-lg-2 control-label">Nombre</label>
+                    <div class="col-lg-10">
+                        <input id="nombreInput" type="text" ng-model="educadora.nombre" class="form-control" placeholder="Ej: Claudio">
+                    </div>
+                </div>
+               <div class="form-group">
+                    <label for="emailInput" class="col-lg-2 control-label">Email</label>
+                    <div class="col-lg-10">
+                        <input id="emailInput" type="email" ng-model="educadora.email" class="form-control" placeholder="Ej: yo@gmyo.cl" >
+                    </div>
+                </div>
+               <div class="form-group">
+                    <label class="col-lg-2 control-label">Administrador</label>
+                    <div class="col-lg-10">
+                        <input  type="checkbox" ng-model="educadora.administrador">
+                    </div>
+                </div>            
+                <div class="form-group">
+                    <div class="col-lg-3">
+                        <input type="submit" class="btn btn-primary" value="Registrar Educadora">
+                    </div>
+                    <div class="col-lg-3">
+                        <a href="#/educadora-gestionar" class="btn btn-default" >Cancelar</a>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>

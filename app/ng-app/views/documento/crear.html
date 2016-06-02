@@ -1,0 +1,20 @@
+
+<div class="row">
+	<input type="file" class="hidden" file-model="user.avatar"/>
+    <a href="#/documento-gestionar/" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span>Gestionar Galeria</a>
+</div>
+</br>
+ <div class="container">
+  	<div class="row">
+  		<!-- Aqui se ingresan las nuevas fotos-->
+  		<div class="col-md-3">
+			<div data-ng-controller="crearDocumentoController">
+	        	<form name="upload" ng-submit="uploadFile()">
+	        	<input type="text"  ng-model="name" /><br>
+	                <input type="file" name="file" uploader-model="file" /> <br>
+	                <input type="submit" class="btn btn-success" value="Enviar"/> 
+	            </form>
+	        </div>
+		</div>
+	</div>	
+</div>	

@@ -1,0 +1,35 @@
+<div name="tituloPagina" class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<img src="/prueba/imagenes/Parvularia.jpg" alt="HOLA" class="img-thumbnail" style="width:200px;height:200px">
+		</div>
+		<h1 class="col-md-5">Gestionar Documentos</h1>
+		<p class="col-md-5" style="text-align:justify;">En esta parte podras gestionar los documentos del Jardin Conejito Blanco.</p>
+	</div>
+</div>
+
+<div class="col-xs-9">
+    <div class="row">
+        <a href="#/documento-crear" class="btn btn-success"><span class="glyphicon glyphicon-add"></span>Nuevo Documento</a>
+        <input type="text" ng-model="search" class="form-control pull-right" placeholder="Buscar documento..." style="width: 300px">
+    </div>
+    <table class="table">
+				<thead>
+					<tr>
+			            <th>Fecha</th>
+			            <th>Nombre</th>
+			        </tr>
+		        </thead>
+		        <tbody data-ng-controller="listarDocumentoController">
+		        	<tr ng-repeat="documento in documentos | filter:search">
+			            <td>{{documento.fecha}}</td>
+			            <td>{{documento.nombre}}</td>
+			            <td>
+			            	<a href="{{documento.link}}" class="btn btn-link"><span class="glyphicon glyphicon-download-alt"></span> Descargar</a>
+							<a href="#/documento-editar/{{documento.id_documento}}" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span> Editar</a>
+					        <button ng-controller="eliminarDocumentoController" ng-click="delete(index)" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Eliminar</button>
+			            </td>
+			        </tr>
+		        </tbody>
+			</table>
+</div>

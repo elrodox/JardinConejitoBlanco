@@ -1,0 +1,81 @@
+	
+		
+		<div name="tituloPagina" class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="/prueba/imagenes/ej.png"  class="img-thumbnail">
+				</div>
+				<h1 class="col-md-5">Editando datos de {{parvulo.nombre}}</h1>
+			</div>
+		</div>
+		
+		<!--<div class="container">-->
+		<!--	<div class="row">-->
+		<!--		<ul class="col-md-3"></ul>-->
+		<!--		<ul class="col-md-6">-->
+		<!--    		<ul class="nav nav-pills navbar">-->
+		<!--    		    <li><a href="#/parvulo-editar/{{id_parvulo}}">Editar Informacion</a></li>-->
+		<!--    		    <li ><a href="#/hito-gestionar/{{id_parvulo}}">Editar Hitos</a></li>-->
+		<!--    			<li class="active"><a href="#/imprevisto-gestionar/{{id_parvulo}}">Editar Imprevitos</a></li>-->
+		<!--    		</ul>-->
+		<!--    	</ul>-->
+		<!--	</div>-->
+		<!--</div>-->
+		
+		<div class="container">
+			<div class="row">
+				<ul class="col-md-3"></ul>
+				<ul class="col-md-6">
+		    		<ul class="nav nav-pills navbar">
+		    		    <li><a href="#/parvulo-gestionar/">Editar Parvulos</a></li>
+		    		    <li><a href="#/hito-seleccionar/">Editar Hitos</a></li>
+		    			<li class="active"><a href="#/imprevisto-seleccionar/">Editar Imprevitos</a></li>
+		    		</ul>
+		    	</ul>
+			</div>
+		</div>
+		
+		<div  class="container" >
+			<div class="row">
+				<div class="col-md-7">
+					<a href="#/imprevisto-crear/{{id_parvulo}}/{{imprevisto.id_imprevisto}}"><button type="button" class="btn btn-success">Agregar imprevisto</button></a>
+				</div>
+				<div class="col-md-7">
+					<table class="table table">
+						<thead>
+							<tr>
+					            <th>Descripcion</th>
+					            <th>Fecha</th>
+					        </tr>
+				        </thead>
+				        <tbody class="lista-imprevistos" >
+							<tr ng-repeat="imprevisto in imprevistos" >
+				                <td> {{imprevisto.descripcion}} </td>
+				                <td> {{imprevisto.fecha}} </td>
+				                <td>
+				                    <a href="#/imprevisto-editar/{{imprevisto.id_parvulo}}/{{imprevisto.id_imprevisto}}" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span> Editar</a>
+				                    <button ng-controller="eliminarImprevistoController" ng-click="delete()" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Eliminar</button>
+				               </td>
+				            </tr>
+				        </tbody>
+					</table>
+					<!--<div ng-init="paginar()"  data-pagination="" data-num-pages=3 -->
+					<!--	  data-current-page=4 data-max-size=2  -->
+					<!--	  data-boundary-links="true"></div>-->
+
+
+					<!--<ul class="pager">-->
+					<!--	<li class="previous"><a href="#">&laquo; Anterior </a></li>-->
+					<!--  	<li class="active">-->
+					<!--  		<a href="#">1</a>-->
+					<!--     	<a href="#">2</a>-->
+					<!--     	<a href="#">...</a>-->
+					<!--     	<a href="#">51</a>-->
+					<!--     	<a href="#">52</a>-->
+					<!--  	</li>-->
+					<!--  	<li class="next"><a href="#">Siguiente &raquo;</a></li>-->
+					<!--</ul>-->
+				</div>
+			</div>
+		</div>
+	

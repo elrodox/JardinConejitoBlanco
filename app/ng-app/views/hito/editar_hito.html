@@ -1,0 +1,60 @@
+
+<div name="tituloPagina" class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<img src="/prueba/imagenes/ej.png" alt="HOLA" class="img-thumbnail">
+		</div>
+		<h1 class="col-md-5">Editando datos de {{parvulo.nombre}}</h1>
+	</div>
+</div>
+
+<!--<div class="container">-->
+<!--	<div class="row">-->
+<!--		<ul class="col-md-3"></ul>-->
+<!--		<ul class="col-md-6">-->
+<!--    		<ul class="nav nav-pills navbar">-->
+<!--    		    <li><a href="#/parvulo-editar/{{id_parvulo}}">Editar Informacion</a></li>-->
+<!--    		    <li class="active"><a href="#/hito-gestionar/{{id_parvulo}}">Editar Hitos</a></li>-->
+<!--    			<li><a href="#/imprevisto-gestionar/{{id_parvulo}}">Editar Imprevitos</a></li>-->
+<!--    		</ul>-->
+<!--    	</ul>-->
+<!--	</div>-->
+<!--</div>-->
+
+<div class="container">
+			<div class="row">
+				<ul class="col-md-3"></ul>
+				<ul class="col-md-6">
+		    		<ul class="nav nav-pills navbar">
+		    		    <li ><a href="#/parvulo-gestionar/">Editar Parvulos</a></li>
+		    		    <li  class="active"><a href="#/hito-seleccionar/">Editar Hitos</a></li>
+		    			<li><a href="#/imprevisto-seleccionar/">Editar Imprevitos</a></li>
+		    		</ul>
+		    	</ul>
+			</div>
+		</div>
+
+<!--///////////////////////-->
+
+<div  class="container" >
+	<div class="row">
+		<div class="col-md-7">
+			<p>Modificar</p>
+			<form class="form-horizontal" role="form" ng-submit="put()">
+			  	<label for="imprevisto">Modficar Hito</label>
+		
+	        	<textarea class="form-control" rows="3" placeholder="Agregue comentarios..." ng-model="hito.descripcion"></textarea>
+			  	
+			  	<div class="row">
+					<ul class="col-md-2"></ul>
+					<ul class="col-md-2">
+						<button type="submit" class="btn btn-success">Guardar</button>
+					</ul>
+					<ul class="col-md-2">
+						<a href="#/hito-gestionar/{{id_parvulo}}" class="btn btn-default" history-back>Cancelar</a>
+					</ul>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

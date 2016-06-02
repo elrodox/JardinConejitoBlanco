@@ -1,0 +1,52 @@
+<div name="tituloPagina" class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="/prueba/imagenes/ej.png"  class="img-thumbnail">
+				</div>
+				<h1>Listado de Parvulos Eliminados</h1>
+				
+			</div>
+</div>
+<br>
+<div class="col-xs-9">
+    <div class="row">
+        <a href="#parvulo-crear/" class="btn btn-success"><span class="glyphicon glyphicon-add"></span>Nuevo Parvulo</a>
+        <a href="#parvulo-gestionar/"  value="Si"></span> Mostrar sólo parvulos No eliminados</a>
+        <input type="text" ng-model="search" class="form-control pull-right" placeholder="Buscar parvulo..." style="width: 300px">
+    </div>
+    <table class="table table-hover table-striped">
+        <thead>
+            <tr>
+                <th>Rut</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Fecha de nac</th>
+                <th>Talla</th>
+                <th>Peso</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        
+        
+        <tbody class="lista-parvulos">
+            <tr ng-repeat="parvulo in parvulos | filter:search" ng-show="parvulo.eliminado==1">
+                <!--parvulo: {{parvulo.id_parvulo}}-->
+                <td> {{parvulo.rut_parvulo}} </td>
+                <td> {{parvulo.nombre}} </td>
+                <td> {{parvulo.email}} </td>
+                <td> {{parvulo.fecha_nacimiento}} </td>
+                <td> {{parvulo.talla}} </td>
+                <td> {{parvulo.peso}} </td>
+         <!--       <td><a href="#hito-editar"><span class="glyphicon glyphicon-edit"></span></a></td>-->
+    	  		<!--<td><a href="#hito-crear"><span class="glyphicon glyphicon-erase"></span></a></td>-->
+                
+                <!-- {{parvulo.id_parvulo}}-->
+                <td>
+                    <!--<a href="#/edit/{{project._id.$oid}}"><i class="icon-pencil"></i></a>-->
+                    <a href="#/parvulo-editar/{{parvulo.id_parvulo}}" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span> Editar</a>
+                    <button ng-controller="activarParvuloController" ng-click="activar()" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span> Activar</button>
+               </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

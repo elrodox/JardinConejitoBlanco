@@ -1,0 +1,37 @@
+	<div name="tituloPagina" class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="/prueba/imagenes/Parvularia.jpg" alt="HOLA" class="img-thumbnail" style="width:200px;height:200px">
+				</div>
+				<h1 class="col-md-5">Editar Galeria</h1>
+				<p class="col-md-5" style="text-align:justify;">En esta parte podras subir las imagenes de actividades
+				realizadas por el Jardin Conejito Blacno, lo que debes hacer es: poner un "Titulo" a la imagen, subir la 
+				imagen con el boton de "Subir imagen", poner "Listo" para cuando todo este en orden.</p>
+			</div>
+		</div>
+<div class="row">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 id="titulo-formulario" class="panel-title">Galeria</h3>
+        </div>
+        <div class="panel-body">
+            <form class="form-horizontal" ng-submit="put()">
+               <div class="form-group">
+                    <label class="col-lg-2 control-label">Titulo</label>
+                    <div class="col-lg-10">
+                        <input  type="text" ng-model="foto.titulo">
+                    </div>
+                </div>            
+                <div class="form-group">
+                    <div class="col-lg-3">
+                        <input type="submit" class="btn btn-primary" value="Guardar">
+                    </div>
+                    <div class="col-lg-3">
+                        <a href="#/galeria-gestionar" class="btn btn-default" >Cancelar</a>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>				

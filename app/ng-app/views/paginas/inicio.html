@@ -1,0 +1,62 @@
+<div class="row">
+    <div class="col-xs-4">
+        <div class="row">
+            <div class="col-xs-12"> <a href="#centro-padres"><img class="img-responsive" src="img/inicio/centro-padres2.jpg"></img></a></div>
+            <div class="col-xs-12"><a href="#niveles-educativos"><img class="img-responsive" src="img/inicio/niveles-educativos2.jpg"></img></a></div>
+            <div class="col-xs-12"><a href="#quienes-somos"><img class="img-responsive" src="img/inicio/nosotros2.jpg"></img></a></div>
+            <div class="col-xs-12"><a href="#proyecto-educativo"><img class="img-responsive" src="img/inicio/proyecto-educativo2.jpg"></img></a></div>
+        </div>
+       
+    </div>
+    <div class="col-xs-8">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h2>Noticias Importantes</h2>
+                    </div>
+                    <div class="small">
+                        <a class="btn btn-success" href="#/noticia-listar" class="pull-right">Ver todas las Noticias</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel-body" ng-controller="listarNoticiaController">
+                <div class="panel panel-default" ng-repeat="noticia in noticias" ng-show="noticia.importante=='Si'">
+                    <div class="panel-heading">
+                        <h3><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            {{noticia.titulo}}
+                        </h3>
+                        <span class="label label-default">{{noticia.fecha}}</span>
+                    </div>
+                    <div class="panel-body">
+                        <p>{{noticia.descripcion}}</p>
+                    </div>
+                </div>
+    
+                <!--<nav>-->
+                <!--  <ul class="pagination">-->
+                <!--    <li>-->
+                <!--      <a href="#" aria-label="Previous">-->
+                <!--        <span aria-hidden="true">&laquo;</span>-->
+                <!--      </a>-->
+                <!--    </li>-->
+                <!--    <li><a href="#">1</a></li>-->
+                <!--    <li><a href="#">2</a></li>-->
+                <!--    <li><a href="#">3</a></li>-->
+                <!--    <li><a href="#">4</a></li>-->
+                <!--    <li><a href="#">5</a></li>-->
+                <!--    <li>-->
+                <!--      <a href="#" aria-label="Next">-->
+                <!--        <span aria-hidden="true">&raquo;</span>-->
+                <!--      </a>-->
+                <!--    </li>-->
+                <!--  </ul>-->
+                <!--</nav>-->
+                
+            </div>
+        </div>
+    
+    </div>
+    
+</div>

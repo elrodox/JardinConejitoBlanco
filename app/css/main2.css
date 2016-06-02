@@ -1,0 +1,297 @@
+/*MODERN NAVBAR*/
+*, *:before, *:after {
+  /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+  -webkit-box-sizing: border-box; 
+
+  /* Firefox (desktop or Android) 28- */
+  -moz-box-sizing: border-box;
+
+  /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+  box-sizing: border-box;
+}
+
+.btn-nav {
+    background-color: #fff;
+    border: 1px solid #e0e1db;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    height:105px;
+}
+.btn-nav:hover {
+    color: #E6952C;
+    cursor: pointer;
+    -webkit-transition: color 1s; /* For Safari 3.1 to 6.0 */
+    transition: color 1s;
+}
+.btn-nav.active {
+    color: #E6952C;
+    padding: 2px;
+	border-top: 6px solid #E6952C;
+	border-bottom: 6px solid #E6952C;
+    border-left: 0;
+    border-right: 0;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -webkit-transition: border 0.3s ease-out, color 0.3s ease 0.5s;
+    -moz-transition: border 0.3s ease-out, color 0.3s ease 0.5s;
+    -ms-transition: border 0.3s ease-out, color 0.3s ease 0.5s; /* IE10 is actually unprefixed */
+    -o-transition: border 0.3s ease-out, color 0.3s ease 0.5s;
+    transition: border 0.3s ease-out, color 0.3s ease 0.5s;
+}
+.btn-nav.active:before {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 6px 6px 0;
+	border-color: #E6952C transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+	margin-left: -6px;
+	top: 0;
+	left: 50%;
+}
+.btn-nav .glyphicon {
+    padding-top: 16px;
+	font-size: 22px;
+}
+.btn-nav.active p {
+    margin-bottom: 4px;
+}
+@media (max-width: 480px) {
+    .btn-group {
+        display: block !important;
+        float: none !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+@media (max-width: 600px) {
+    .btn-nav .glyphicon {
+        padding-top: 12px;
+        font-size: 26px;
+    }
+}
+
+.dropdown-menu {
+    min-width: 767px;
+}
+.dropdown-menu li a {
+	padding: 5px 15px;
+	font-weight: 300;
+}
+.multi-column-dropdown {
+	list-style: none;
+}
+.multi-column-dropdown li a {
+	display: block;
+	clear: both;
+	line-height: 1.428571429;
+	color: #333;
+	white-space: normal;
+}
+.multi-column-dropdown li a:hover {
+	text-decoration: none;
+	color: #262626;
+	background-color: #f5f5f5;
+}
+ 
+@media (max-width: 767px) {
+	.dropdown-menu.multi-column {
+		min-width: 240px !important;
+		overflow-x: hidden;
+	}
+}
+a.btn-nav{
+    color: #615B54;
+}
+
+/* fixea bug de angular-ui-bootstrap */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.container-fluid{
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.toast-top-center{
+    display: table-cell; 
+    vertical-align: middle; 
+    text-align: center;
+}
+@media (max-width: 1200px) {
+    body {
+      font-size:90%;
+    }
+    h1 {
+      font-size:4.3em;
+    }
+    p {
+      font-size:1.3em;
+    }
+    header {
+      height:80px;
+    }
+    header .logo {
+      margin-top:12px;
+      width:200px;
+    }
+    header nav {
+      margin-top:11px;
+    }
+    header nav ul li {
+      margin-right:12px;
+    }
+    header nav ul li a {
+      border-radius:23px;
+      font-size: 1.3em;
+      padding:10px 12px;
+    }
+    .wrap {
+      padding:0 30px;
+    }
+    .paddRow .close {
+      right:30px;
+    }
+}
+
+@media (max-width: 900px) {
+    .contactForm {
+      width:100%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+      font-size:80%;
+      margin:0;
+    }
+    h1 {
+      font-size:4em;
+    }
+    header {
+      height:70px;
+    }
+    header .logo {
+      margin-top:20px;
+      width:70px;
+    }
+    header nav {
+      margin-top:8px;
+    }
+    header nav ul li {
+      margin-right:5px;
+    }
+    header nav ul li a {
+      border-radius:20px;
+      font-size:1.1em;
+      padding:8px;
+    }
+    .wrap {
+      padding:0 15px;
+    }
+    .projectObj .name {
+      font-size:3em;
+    }
+    .paddRow {
+      padding-bottom:30px;
+    }
+    .paddRow .head {
+      font-size:3em;
+      margin:30px 0;
+    }
+    .paddRow .close {
+      right:20px;
+      top:60px;
+      width:30px;
+    }
+    .projectHead .picture {
+      width:67%;
+    }
+    .projectHead .picture.right {
+      margin-right:16.5%;
+    }
+    .projectHead .text {
+      position:static;
+      width:100%;
+    }
+    .projectHead .centerText {
+      width:70%;
+    }
+    .view-enter,.view-leave {
+      -webkit-transform:translate3d(0,0,0);
+      transform:translate3d(0,0,0);
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+      font-size:70%;
+      margin:0;
+    }
+    header {
+      height:50px;
+    }
+    header .logo {
+      display:none;
+    }
+    header nav {
+      margin-top:3px;
+    }
+    header nav ul li {
+      margin-right:3px;
+    }
+    header nav ul li a {
+      border-radius:20px;
+      font-size:1.3em;
+      padding:5px 14px;
+    }
+    #contactBtn {
+      display:none;
+    }
+    .wrap {
+      padding:0 10px;
+    }
+    .paddRow {
+      padding-bottom:20px;
+    }
+    .paddRow .head {
+      margin:20px 0;
+    }
+    .paddRow .close {
+      right:10px;
+      top:45px;
+      width:20px;
+    }
+    .about .image {
+      margin:10% auto;
+      width:60%;
+    }
+    .about .abIcon {
+      display:inline;
+    }
+    .projectHead .centerText {
+      width:90%;
+    }
+    .about .txt,.input {
+      width:100%;
+    }
+    .about .flLeft,.about .flRight,.input.email {
+      float:none;
+    }
+}
+/*
+
+naranjo E6952C
+azul 234D69
+
+*/
+
+
+.parvuloPresente button span {
+  background-color: limegreen;
+  border-radius: 32px;
+  color: black;
+}

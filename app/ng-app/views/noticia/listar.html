@@ -1,0 +1,33 @@
+<div name="tituloPagina" class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<img src="/prueba/imagenes/ej.png"  class="img-thumbnail">
+		</div>
+		<h1 class="col-md-5">Noticias</h1>
+		<h3 class="col-md-5" style="text-align:justify;" >A continuacion las noticias ordenadas por fecha de publicacion</h3>
+	</div>
+	<h3>Buscar una Noticia:</h3>
+	<div  class="col-md-2 col-md-offset-3">
+	    <input type="text" ng-model="search" class="form-control pull-right" placeholder="Buscar noticia..." style="width: 300px">
+	</div>
+</div>
+<br>
+<div class="col-xs-11">
+    <table class="table table-hover table-striped">
+        <thead>
+            <tr>
+                <th>Fecha</th>
+	            <th>Titulo</th>
+	            <th>Descripcion</th>
+            </tr>
+        </thead>
+
+        <tbody class="lista-noticias">
+           <tr ng-repeat="noticia in noticias | filter:search">
+                <td class="col-md-2">{{noticia.fecha}}</td>
+	            <td class="col-md-3">{{noticia.titulo}}</td>
+	            <td>{{noticia.descripcion}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

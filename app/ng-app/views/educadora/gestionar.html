@@ -1,0 +1,47 @@
+<div name="tituloPagina" class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="/prueba/imagenes/ej.png"  class="img-thumbnail">
+				</div>
+				<h1>Listado de Educadoras</h1>
+				
+			</div>
+</div>
+<br>
+<div class="col-xs-9">
+    <div class="row">
+        <a href="#educadora-crear/" class="btn btn-success"><span class="glyphicon glyphicon-add"></span>Nueva Educadora</a>
+        <a href="#educadora-papelera/" value="Si"></span> Mostrar sólo educadoras eliminadas</a>
+        <input type="text" ng-model="search" class="form-control pull-right" placeholder="Buscar educadora..." style="width: 300px">
+    </div>
+    <table class="table table-hover table-striped">
+        <thead>
+            <tr>
+                <th>Rut</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Administrador</th>
+            </tr>
+        </thead>
+        
+        
+        <tbody>
+            <tr ng-repeat="educadora in educadoras | filter:search" ng-show="educadora.eliminado == 0 || educadora.eliminado == null ">
+                <!--parvulo: {{parvulo.id_parvulo}}-->
+                <td> {{educadora.rut_educadora}} </td>
+                <td> {{educadora.nombre}} </td>
+                <td> {{educadora.email}} </td>
+                <td> {{educadora.administrador}} </td>
+         <!--       <td><a href="#hito-editar"><span class="glyphicon glyphicon-edit"></span></a></td>-->
+    	  		<!--<td><a href="#hito-crear"><span class="glyphicon glyphicon-erase"></span></a></td>-->
+                
+                <!-- {{parvulo.id_parvulo}}-->
+                <td>
+                    <!--<a href="#/edit/{{project._id.$oid}}"><i class="icon-pencil"></i></a>-->
+                    <a href="#/educadora-editar/{{educadora.id_educadora}}" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span> Editar</a>
+                    <button ng-controller="eliminarEducadoraController" ng-click="delete()" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Eliminar</button>
+               </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

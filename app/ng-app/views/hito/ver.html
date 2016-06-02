@@ -1,0 +1,25 @@
+<div class="row">
+    <h1>{{parvulo.nombre}}</h1>
+</div>
+<br>
+<div>
+    <input type="text" ng-model="search" class="form-control pull-right" placeholder="Buscar hito..." style="width: 300px">
+</div>
+<br>
+<!--<div class="table-responsive">-->
+<table class="col-xs-6 table table-hover table-striped">
+    <tbody>
+        <tr>
+            <th>Descripcion</th>
+            <th>Fecha</th>
+        </tr>
+    </tbody>
+    <tbody class="lista-hitos">
+		<tr ng-repeat="hito in hitos | filter:search" ng-show="hito != undefined" >
+            
+            <td> {{hito.descripcion}} </td>
+            <td> {{hito.fecha}} </td>
+            
+        </tr>
+    </tbody>
+</table>

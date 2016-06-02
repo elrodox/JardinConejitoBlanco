@@ -1,0 +1,30 @@
+
+    <form ng-submit="enviandoDatos()">
+        <div class="row">
+            <div class="col-md-9 col-md-offset-3" >
+                <br>
+                <p>Ingrese su nuevo E-Mail:</p>
+            </div>
+      
+            <div class="col-md-9 col-md-offset-3">
+                <input type="email" ng-model="dato.mail" placeholder="Ingrese su nuevo E-mail"/>
+            </div>
+            
+            <div class="col-md-9 col-md-offset-3">
+                <br>
+                <p >Ingrese contraseña de autorizacion:</p>
+            </div>
+            
+            <div class="col-md-9 col-md-offset-3">
+                <input type="password" ng-model="dato.contrasena" placeholder="Ingrese Contraseña"/>
+            </div>
+            
+            <div class="col-md-9 col-md-offset-3">
+                <br>
+                <input type="submit" class="btn btn-success" value="Cambiar"/>
+                <a href="#/educadora-dashboard/" type="submit" class="btn btn-danger" >Cancelar</a>
+            </div>
+        </div>
+        
+    </form>
+    

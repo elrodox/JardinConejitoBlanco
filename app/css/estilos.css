@@ -1,0 +1,72 @@
+
+h1{
+    text-align: center;/*centra el texto*/
+    color: #666;
+    text-shadow: 0px 2px 0px #fff;/*da la sombra*/
+}
+
+.boton{
+    width:650px;
+   
+}
+/*titulo de la pagina en que se encuentra*/
+.caja1{
+    width:1000px;
+    height:50px;
+    background:#4A88F4;
+    /*posicion*/
+    top:0px;
+    bottom:0px;
+    right:0px;
+    left:0px;
+}
+/*menu izquierdo*/
+.caja2{
+    width:200px;
+    height:225px;
+    background:#4A88F4;
+    /*posicion*/
+    top:0px;
+    bottom:0px;
+    right:0px;
+    left:0px;
+}
+/*subir documentos*/
+.caja3{
+    width:200px;
+    height:200px;
+    background:#4AFFFF;
+   /*posicion*/
+    position:absolute;
+    right:0;
+    left:250px;
+    top:200px;
+    bottom:0px;
+}
+
+.caja3.1{
+    
+    
+}
+
+/*lista de documentos*/
+.caja4{
+    width:100px;
+    height:200px;
+    background:#4A88F4;
+   /*posicion*/
+    top:0px;
+    bottom:0px;
+    right:0px;
+    left:0px;
+}
+
+#navegador ul{
+   list-style-type: none;
+   text-align: center;
+}
+#navegador li{
+   display: inline;
+   text-align: center;
+   margin: 0 10px 0 0;
+}

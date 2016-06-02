@@ -1,0 +1,132 @@
+<!doctype html>
+<html ng-app>
+	<!-- La pestana toma el nombre de este tittle -->
+	<title>
+		Jardin Conejito Blanco
+	</title>
+
+	<head>
+ 
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+	
+	</head>
+	
+	<body>
+		
+		<div name="CerrarSesion" class="container">
+			<div class="row">
+				<div class="col-md-9"></div>
+				<div class="col-md-3">
+					<a class="btn btn-danger" href="/app/#/">Cerrar Sesion</a>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div name="tituloPagina" class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="/prueba/imagenes/ej.png" alt="HOLA" class="img-thumbnail">
+				</div>
+				<h1 class="col-md-5">Modificar parvulo</h1>	
+			</div>
+		</div>
+		
+		<div class="container" >
+			<div class="row">
+				<ul class="col-md-3"></ul>
+				<ul class="col-md-9">
+					<a class="btn btn-primary" href="">Gestionar Informacion</a>
+					<a class="btn btn-primary" href="">Gestionar Hitos</a>
+					<a class="btn btn-primary" href="">Gestionar Imprevitos</a>
+				</ul>
+			</div>
+		</div>
+		
+		<div  class="container" >
+			<div class="row">
+				<div class="col-md-2">
+					<ul class="nav nav-pills nav-stacked">
+                      <li class="active"><a href="#">Inicio</a></li>
+                      <li><a class="btn btn-primary" href="/prueba/app/vista/Educador/Gestion_documentos_educadora.html">Gestionar Documentos</a></li>
+                      <li><a class="btn btn-primary"href="/prueba/app/vista/Educador/gestionar_noticia_educadora.html">Gestionar Noticias</a></li>
+                      <li><a class="btn btn-primary"href="/prueba/app/vista/Educador/gestionar_galeria_educadora.html">Gestionar Galeria</a></li>
+                      <li><a class="btn btn-primary"href="/prueba/app/vista/Educador/Gestionar_asistencia_educadora.html">Gestionar Asistencia</a></li>
+                      <li><a class="btn btn-primary"href="/prueba/app/vista/Educador/Gestionar_parvulo_educadora.html">Gestionar Parvulo</a></li>
+                      <li><a class="btn btn-primary"href="/app/#/">Pagina Principal</a></li>
+                    </ul>
+				</div>	
+				<div class="col-md-7">
+					<p>Modificar</p>
+					<form class="form-horizontal" role="form">
+					  	<div class="form-group">
+					    	<label for="nombre_3" class="col-md-2 control-label">Nombre</label>
+					    	<div class="col-md-4">
+					      	<input type="text" class="col-md-2 form-control" id="nombre_3"
+					             	placeholder="Rodolfo Paulo">
+					    	</div>
+					  	</div>
+					  	
+					  	<div class="form-group">
+					    	<label for="nacimiento_3" class="col-md-2 control-label">Fecha de nac.</label>
+					    	<div class="col-md-4">
+					      	<input type="date" class="form-control" id="nacimiento_3"
+					             	placeholder="08/10/1990">
+					    	</div>
+					  	</div>
+					  	
+					  	<div class="form-group">
+					    	<label for="rut_3" class="col-md-2 control-label">Rut</label>
+					    	<div class="col-md-4">
+					      	<input type="text" class="form-control" id="rut_3"
+					             	placeholder="17.298.365-9">
+					    	</div>
+					  	</div>
+					  	
+					  	<div class="form-group">
+					    	<label for="peso_3" class="col-md-2 control-label">Peso</label>
+					    	<div class="col-md-4">
+						      	<input type="text" class="form-control" id="peso_3" placeholder="60">
+					    	</div>
+					    	<label for="peso_3" class="col-md-0 control-label">Kg.</label>
+					  	</div>
+					  	
+					  	<div class="form-group">
+					    	<label for="talla_3" class="col-md-2 control-label">Talla</label>
+					    	<div class="col-md-4">
+						      	<input type="text" class="form-control" id="talla_3" placeholder="30">
+					    	</div>
+					    	<label for="talla_3" class="col-md-0 control-label">cm.</label>
+					  	</div>
+					  	
+					  	<div class="form-group">
+					    	<label for="correo_3" class="col-md-2 control-label">Email</label>
+					    	<div class="col-md-4">
+						      	<input type="email" class="form-control" id="correo_3" placeholder="pauloyrolo@amorpuro.cl">
+					    	</div>
+					  	</div>
+					  	
+					  	<div class="row">
+							<ul class="col-md-2"></ul>
+							<ul class="col-md-2">
+								<button type="submit" class="btn btn-success">Modificar</button>
+							</ul>
+							<ul class="col-md-2">
+								<button type="submit" class="btn btn-danger">Cancelar</button>
+							</ul>
+						</div>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Esta parte llama a angular en este html -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		
+	</body>
+	
+</html>

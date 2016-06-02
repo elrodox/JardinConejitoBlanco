@@ -1,0 +1,32 @@
+<div name="tituloPagina" class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<img src="/prueba/imagenes/Parvularia.jpg" alt="HOLA" class="img-thumbnail" style="width:200px;height:200px">
+		</div>
+		<h1 class="col-md-5">Ver Documentos</h1>
+		<p class="col-md-5" style="text-align:justify;">En esta parte podras ver los documentos del <br>Jardin Conejito Blanco.</p>
+	</div>
+</div>
+
+<div class="col-xs-9">
+    <div class="row">
+        <input type="text" ng-model="search" class="form-control pull-right" placeholder="Buscar documento..." style="width: 300px">
+    </div>
+    <table class="table">
+				<thead>
+					<tr>
+			            <th>Fecha</th>
+			            <th>Nombre</th>
+			        </tr>
+		        </thead>
+		        <tbody data-ng-controller="listarDocumentoController">
+		        	<tr ng-repeat="documento in documentos | filter:search">
+			            <td>{{documento.fecha}}</td>
+			            <td>{{documento.nombre}}</td>
+			            <td>
+			            	<a href="{{documento.link}}" class="btn btn-link"><span class="glyphicon glyphicon-download-alt"></span> Descargar</a>
+			            </td>
+			        </tr>
+		        </tbody>
+			</table>
+</div>

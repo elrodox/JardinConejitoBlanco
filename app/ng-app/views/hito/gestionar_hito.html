@@ -1,0 +1,78 @@
+		<div name="tituloPagina" class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="/prueba/imagenes/ej.png" alt="HOLA" class="img-thumbnail">
+				</div>
+				<h1 class="col-md-5">Editando datos de {{parvulo.nombre}}</h1>
+			</div>
+		</div>
+		
+		<!--<div class="container">-->
+		<!--	<div class="row">-->
+		<!--		<ul class="col-md-3"></ul>-->
+		<!--		<ul class="col-md-6">-->
+		<!--    		<ul class="nav nav-pills navbar">-->
+		<!--    		    <li><a href="#/parvulo-editar/{{id_parvulo}}">Editar Informacion</a></li>-->
+		<!--    		    <li class="active"><a href="#/hito-gestionar/{{id_parvulo}}">Editar Hitos</a></li>-->
+		<!--    			<li><a href="#/imprevisto-gestionar/{{id_parvulo}}">Editar Imprevitos</a></li>-->
+		<!--    		</ul>-->
+		<!--    	</ul>-->
+		<!--	</div>-->
+		<!--</div>-->
+		<div class="container">
+	<div class="row">
+		<ul class="col-md-3"></ul>
+		<ul class="col-md-6">
+    		<ul class="nav nav-pills navbar">
+    		    <li ><a href="#/parvulo-gestionar/">Editar Parvulos</a></li>
+    		    <li class="active"><a href="#/hito-seleccionar/">Editar Hitos</a></li>
+    			<li><a href="#/imprevisto-seleccionar/">Editar Imprevitos</a></li>
+    		</ul>
+    	</ul>
+	</div>
+</div>
+		
+		<div  class="container" >
+			<div class="row">
+				<div class="col-md-7">
+					<a href="#/hito-crear/{{id_parvulo}}" class="btn btn-success">Agregar Hito</a>
+				</div>
+				<div class="col-md-7">
+					<div ng-hide="hitos.length>0">
+						<h4>Este parvulo no posee hitos.</h4>
+					</div>
+					<table class="table table" ng-show="hitos.length>0">
+						<thead>
+							<tr>
+					            <th>Descripcion</th>
+					            <th>Fecha</th>
+					        </tr>
+				        </thead>
+				        <tbody class="lista-hitos">
+							<tr ng-repeat="hito in hitos | filter:search" ng-show="hito != undefined" >
+				                <!--parvulo: {{parvulo.id_parvulo}}-->
+				                <td> {{hito.descripcion}} </td>
+				                <td> {{hito.fecha}} </td>
+				                <td>
+				                    <!--<a href="#/edit/{{project._id.$oid}}"><i class="icon-pencil"></i></a>-->
+				                    <a href="#/hito-editar/{{hito.id_parvulo}}/{{hito.id_hito}}" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span> Editar</a>
+				                    <button ng-controller="eliminarHitoController" ng-click="delete($index)" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Eliminar</button>
+				               </td>
+				            </tr>
+				        </tbody>
+					</table>
+					<!--<ul class="pager">-->
+					<!--	<li class="previous"><a href="#">&laquo; Anterior </a></li>-->
+					<!--  	<li class="active">-->
+					<!--  		<a href="#">1</a>-->
+					<!--     	<a href="#">2</a>-->
+					<!--     	<a href="#">...</a>-->
+					<!--     	<a href="#">51</a>-->
+					<!--     	<a href="#">52</a>-->
+					<!--  	</li>-->
+					<!--  	<li class="next"><a href="#">Siguiente &raquo;</a></li>-->
+					<!--</ul>-->
+				</div>
+			</div>
+		</div>
+	

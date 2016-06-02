@@ -1,0 +1,44 @@
+
+<div name="tituloPagina" class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<img src="/prueba/imagenes/ej.png"  class="img-thumbnail">
+		</div>
+		<h1 class="col-md-5">Gestionar Noticias</h1>
+		<p class="col-md-5" style="text-align:justify;" >En esta seccion puedes ingresar noticias nuevas que sean de interes para los apoderados, en el caso de 
+		esta sea importante, puedes utilizar el boton que esta al lado del titulo, con esto se mostrara entre las 
+		noticias importantes de la pagina.</p>
+	</div>
+</div>
+<br>
+<div class="col-xs-11">
+    <div class="row">
+        <a href="#noticia-crear/" class="btn btn-success"><span class="glyphicon glyphicon-add"></span>Nueva Noticia</a>
+       <!-- <a href="#parvulo-papelera/" value="Si"></span> Mostrar sólo parvulos eliminados</a> -->
+        <input type="text" ng-model="search" class="form-control pull-right" placeholder="Buscar noticia..." style="width: 300px">
+    </div>
+    
+    <table class="table table-hover table-striped">
+        <thead>
+            <tr>
+                <th>Fecha</th>
+	            <th>Titulo</th>
+	            <th>Descripcion</th>
+	            <th>Importante</th>
+            </tr>
+        </thead>
+
+        <tbody class="lista-noticias">
+           <tr ng-repeat="noticia in noticias | filter:search">
+                <td class="col-md-2">{{noticia.fecha}}</td>
+	            <td class="col-md-3">{{noticia.titulo}}</td>
+	            <td>{{noticia.descripcion}}</td>
+	            <th>{{noticia.importante}}</th>
+                <td>
+                    <a href="#/noticia-editar/{{noticia.id_noticia}}" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span> Editar</a>
+                    <button ng-controller="eliminarNoticiaController" ng-click="delete($index)" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Eliminar</button>
+               </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

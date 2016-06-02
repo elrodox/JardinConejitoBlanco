@@ -1,0 +1,67 @@
+<div name="tituloPagina" class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="/prueba/imagenes/ej.png"  class="img-thumbnail">
+				</div>
+				<h1>Listado de Parvulos</h1>
+				<h3>Por favor seleccione un parvulo <p>para revisar sus hitos</h3>
+				
+			</div>
+</div>
+<!--<div class="container">-->
+<!--	<div class="row">-->
+<!--		<ul class="col-md-3"></ul>-->
+<!--		<ul class="col-md-6">-->
+<!--    		<ul class="nav nav-pills navbar">-->
+<!--    		    <li><a href="#/parvulo-gestionar">Editar Informacion</a></li>-->
+<!--    		    <li class="active"><a href="#/hito-seleccionar">Editar Hitos</a></li>-->
+<!--    			<li><a href="#/imprevisto-seleccionar">Editar Imprevitos</a></li>-->
+<!--    		</ul>-->
+<!--    	</ul>-->
+<!--	</div>-->
+<!--</div>-->
+
+<div class="container">
+			<div class="row">
+				<ul class="col-md-3"></ul>
+				<ul class="col-md-6">
+		    		<ul class="nav nav-pills navbar">
+		    		    <li><a href="#/parvulo-gestionar/">Editar Parvulos</a></li>
+		    		    <li class="active"><a href="#/hito-seleccionar/">Editar Hitos</a></li>
+		    			<li><a href="#/imprevisto-seleccionar/">Editar Imprevitos</a></li>
+		    		</ul>
+		    	</ul>
+			</div>
+		</div>
+
+<br>
+<div class="col-xs-9">
+    <div class="row">
+        <input type="text" ng-model="search" class="form-control pull-right" placeholder="Buscar parvulo..." style="width: 300px">
+    </div>
+    
+    <table class="table table-hover table-striped">
+        <thead>
+            <tr>
+                <th>Rut</th>
+                <th>Nombre</th>
+            </tr>
+        </thead>
+
+        <tbody class="lista-parvulos">
+            <tr ng-repeat="parvulo in parvulos | filter:search" ng-show="parvulo.eliminado==0 || parvulo.eliminado==null ">
+                <!--parvulo: {{parvulo.id_parvulo}}-->
+                <td> {{parvulo.rut_parvulo}} </td>
+                <td> {{parvulo.nombre}} </td>
+         <!--       <td><a href="#hito-editar"><span class="glyphicon glyphicon-edit"></span></a></td>-->
+    	  		<!--<td><a href="#hito-crear"><span class="glyphicon glyphicon-erase"></span></a></td>-->
+                
+                <!-- {{parvulo.id_parvulo}}-->
+                <td>
+                    <!--<a href="#/edit/{{project._id.$oid}}"><i class="icon-pencil"></i></a>-->
+                    <a href="#/hito-gestionar/{{parvulo.id_parvulo}}" class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span> Hitos</a>
+               </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

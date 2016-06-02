@@ -1,0 +1,84 @@
+<div ng-controller="registrarAsistenciaController">	
+	<div name="tituloPagina" class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<img src="/prueba/imagenes/ej.png" alt="HOLA" class="img-thumbnail">
+			</div>
+			<h1 class="col-md-5">Gestionar Asistencia</h1>
+			<p class="col-md-5" style="text-align:justify;"> Aqui usted podra ver la asistencia de un determinado dia
+			de una manera muy sencilla, solo debe hacer clic en los botones que se encuentran al lado del nombre del 
+			alumno y con esto indicara que el alumno se encuentra presente, y recordar indicar la fecha a la que se
+			esta haciendo referencia. Para guardar haga clic en el boton "Guardar"</p>
+		</div>
+	</div>
+	<br>
+	<div style="display:inline-block; min-height:290px;">
+      <uib-datepicker ng-model="dt" max-date="maxDate" class="well well-sm"></uib-datepicker>
+    </div>
+    
+	<form class="form-horizontal" ng-submit="enviar()">
+		<div class="row">
+			<div class="col-md-7">
+				<table class="table">
+					<thead>
+						<tr>
+				            <th>Nombre</th>
+				            <th>Asistencia</th>
+				        </tr>
+			        </thead>
+			        <tbody class="parvulos-asistencia">
+			        	<tr ng-repeat="parvulo in parvulos">
+				            <td> {{parvulo.nombre}}</td> 
+				            <td><input  type="checkbox" ng-checked="parvulo.check" ng-model="parvulo.check"></td>
+				        </tr>
+			        </tbody>
+				</table>
+				<ul class="col-md-9">
+					<button type="submit" class="btn btn-success">Guardar</button>
+			    </ul>
+		    </div>
+		</form>
+	</div>
+</div>	
+
+
+<!--<div ng-controller="gestionarAsistenciaController">-->
+<!--    <pre>Selected date is: <em>{{dt | date:'fullDate' }}</em></pre>-->
+
+<!--    <p>Fecha</p>-->
+<!--    <div style="display:inline-block; min-height:290px;">-->
+<!--      <uib-datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="well well-sm" custom-class="getDayClass(date, mode)" date-disabled="disabled(date, mode)"></uib-datepicker>-->
+<!--    </div>-->
+
+<!--    <h4>Popup</h4>-->
+<!--    <div class="row">-->
+<!--        <div class="col-md-6">-->
+<!--            <p class="input-group">-->
+<!--              <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="status.opened" min-date="minDate" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />-->
+<!--              <span class="input-group-btn">-->
+<!--                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>-->
+<!--              </span>-->
+<!--            </p>-->
+<!--        </div>-->
+
+<!--        <div class="col-md-6">-->
+<!--            <p class="input-group">-->
+<!--              <input type="date" class="form-control" uib-datepicker-popup ng-model="dt" is-open="status.opened" min-date="minDate" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />-->
+<!--              <span class="input-group-btn">-->
+<!--                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>-->
+<!--              </span>-->
+<!--            </p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="row">-->
+<!--        <div class="col-md-6">-->
+<!--            <label>Format:</label> <select class="form-control" ng-model="format" ng-options="f for f in formats"><option></option></select>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <hr />-->
+<!--    <button type="button" class="btn btn-sm btn-info" ng-click="today()">Today</button>-->
+<!--    <button type="button" class="btn btn-sm btn-default" ng-click="setDate(2009, 7, 24)">2009-08-24</button>-->
+<!--    <button type="button" class="btn btn-sm btn-danger" ng-click="clear()">Clear</button>-->
+<!--    <button type="button" class="btn btn-sm btn-default" ng-click="toggleMin()" uib-tooltip="After today restriction">Min date</button>-->
+<!--</div>-->

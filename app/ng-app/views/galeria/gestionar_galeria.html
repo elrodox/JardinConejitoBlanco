@@ -1,0 +1,40 @@
+<div name="tituloPagina" class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<img src="/prueba/imagenes/Parvularia.jpg" alt="HOLA" class="img-thumbnail" style="width:200px;height:200px">
+		</div>
+		<h1 class="col-md-5">Gestionar Galeria</h1>
+		<p class="col-md-5" style="text-align:justify;">En esta parte podras subir las imagenes de actividades
+		realizadas por el Jardin Conejito Blanco, lo que debes hacer es: poner un "Titulo" a la imagen, subir la 
+		imagen con el boton de "Subir imagen", poner "Listo" para cuando todo este en orden.</p>
+	</div>
+</div>
+
+<div class="col-xs-9">
+    <div class="row">
+        <a href="#/galeria-crear" class="btn btn-success"><span class="glyphicon glyphicon-add"></span>Nueva Foto</a>
+        <input type="text" ng-model="search" class="form-control pull-right" placeholder="Buscar foto..." style="width: 300px">
+    </div>
+    <table class="table table-hover table-striped">
+        <thead>
+		    <tr>
+		        <th>Titulo foto</th>
+		        <th>Imagen</th>
+		        <th>Acción</th>
+		    </tr>
+		</thead>
+        
+        
+        <tbody>
+            <tr ng-repeat="foto in fotos | filter:search">
+               
+                <td>{{foto.titulo}}</td>
+				<td> <img class=img-responsive ng-src="{{foto.link}}" width="20%"></img> </td>
+                <td>
+                    <a href="#/galeria-editar/{{foto.id_foto}}" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span> </a>
+					<button ng-controller="eliminarFotoController" class="btn btn-danger" ng-click="delete($index)" ><span class="glyphicon glyphicon-remove"></span> Eliminar</button>
+               </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

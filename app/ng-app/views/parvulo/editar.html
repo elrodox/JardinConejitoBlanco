@@ -1,0 +1,96 @@
+
+<div name="tituloPagina" class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<img src="/prueba/imagenes/ej.png" alt="HOLA" class="img-thumbnail">
+		</div>
+		<h1 class="col-md-5">Editando datos de {{parvulo.nombre}}</h1>
+	</div>
+</div>
+
+<!--<div class="container">-->
+<!--	<div class="row">-->
+<!--		<ul class="col-md-3"></ul>-->
+<!--		<ul class="col-md-6">-->
+<!--    		<ul class="nav nav-pills navbar">-->
+<!--    		    <li class="active"><a href="#/parvulo-editar/{{parvulo.id_parvulo}}">Editar Informacion</a></li>-->
+<!--    		    <li><a href="#/hito-gestionar/{{parvulo.id_parvulo}}">Editar Hitos</a></li>-->
+<!--    			<li><a href="#/imprevisto-gestionar/{{parvulo.id_parvulo}}">Editar Imprevitos</a></li>-->
+<!--    		</ul>-->
+<!--    	</ul>-->
+<!--	</div>-->
+<!--</div>-->
+
+<div class="container">
+			<div class="row">
+				<ul class="col-md-3"></ul>
+				<ul class="col-md-6">
+		    		<ul class="nav nav-pills navbar">
+		    		    <li class="active"><a href="#/parvulo-gestionar/">Editar Parvulos</a></li>
+		    		    <li ><a href="#/hito-seleccionar/">Editar Hitos</a></li>
+		    			<li><a href="#/imprevisto-seleccionar/">Editar Imprevitos</a></li>
+		    		</ul>
+		    	</ul>
+			</div>
+		</div>
+
+<br>
+<div class="row">
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 id="titulo-formulario" class="panel-title">Parvulo</h3>
+    </div>
+    <div class="panel-body">
+        <form id="formulario" class="form-horizontal" ng-submit="put()">
+            <div class="form-group">
+                <label for="rutInput" class="col-lg-2 control-label">Rut</label>
+                <div class="col-lg-10">
+                    <input id="rutInput" type="text" ng-model= "parvulo.rut_parvulo" name="Persona[rut]" class="form-control" >
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="nombreInput" class="col-lg-2 control-label">Nombre</label>
+                <div class="col-lg-10">
+                    <input id="nombreInput" type="text" name="Persona[nombre]" ng-model="parvulo.nombre" class="form-control" placeholder="">
+                </div>
+            </div>
+           <div class="form-group">
+                <label for="emailInput" class="col-lg-2 control-label">Email</label>
+                <div class="col-lg-10">
+                    <input id="emailInput" type="email" name="Persona[email]" ng-model="parvulo.email" class="form-control" placeholder="" >
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="fechaNacimientoInput" class="col-lg-2 control-label">Fecha de Nacimiento</label>
+                <div class="col-lg-10">
+                    <input id="fechaNacimientoInput" type="text" name="Persona[fecha_nacimiento]" ng-model="parvulo.fecha_nacimiento" class="form-control" placeholder="" >
+                </div>
+            </div>
+           <div class="form-group">
+                <label for="pesoInput" class="col-lg-2 control-label">Peso</label>
+                <div class="col-lg-10">
+                    <input id="pesoInput" type="text" name="Persona[peso]" ng-model="parvulo.peso" class="form-control" placeholder="" >
+                </div>
+            </div>
+           <div class="form-group">
+                <label for="tallaInput" class="col-lg-2 control-label">Talla</label>
+                <div class="col-lg-10">
+                    <input id="tallaInput" type="text" name="Persona[talla]" ng-model="parvulo.talla" class="form-control" placeholder="" >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-lg-3">
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </div>
+                <div class="col-lg-offset-3 col-lg-3">
+                    <a href="#/parvulo-gestionar" class="btn btn-default">Cancelar</a>
+                   
+                </div>
+            </div>
+            
+        </form>
+    </div>
+</div>
+</div>
+</div>

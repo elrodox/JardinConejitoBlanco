@@ -1,0 +1,81 @@
+<div class="row">
+    <a href="#parvulo-gestionar/" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span>Gestionar Información</a>
+</div>
+<br>
+<div class="row">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 id="titulo-formulario" class="panel-title">Nuevo Parvulo</h3>
+        </div>
+        <div class="panel-body">
+            <form class="form-horizontal" ng-submit="enviar()">
+                <div class="form-group">
+                    <label for="rutInput" class="col-lg-2 control-label">Rut</label>
+                    <div class="col-lg-10">
+                        <input id="rutInput" type="text" ng-model="parvulo.rut_parvulo" class="form-control" placeholder="Ej: 12321441-2" >
+                    </div>
+                </div>   
+                <div class="form-group">
+                    <label for="passwordInput" class="col-lg-2 control-label">Password</label>
+                    <div class="col-lg-10">
+                        <input id="passwordInput" type="password" ng-model="parvulo.password" class="form-control" placeholder="*******" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-lg-2 control-label">Nombre</label>
+                    <div class="col-lg-10">
+                        <input id="nombreInput" type="text" ng-model="parvulo.nombre" class="form-control" placeholder="Ej: Claudio">
+                    </div>
+                </div>
+               <div class="form-group">
+                    <label for="emailInput" class="col-lg-2 control-label">Email</label>
+                    <div class="col-lg-10">
+                        <input id="emailInput" type="email" ng-model="parvulo.email" class="form-control" placeholder="Ej: yo@gmyo.cl" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="fechaNacimientoInput" class="col-lg-2 control-label">Fecha de Nacimiento</label>
+                    <div class="col-lg-10">
+                        <input id="fechaNacimientoInput" type="date" ng-model="parvulo.fecha_nacimiento" class="form-control" placeholder="Ej: 10-04-1992" >
+                    </div>
+                </div>
+               <div class="form-group">
+                    <label for="tallaInput" class="col-lg-2 control-label">Talla</label>
+                    <div class="col-lg-10">
+                        <input id="tallaInput" type="number" min="1" ng-model="parvulo.talla" class="form-control" placeholder="Ej: 30" >
+                    </div>
+                </div>            
+               <div class="form-group">
+                    <label for="pesoInput" class="col-lg-2 control-label">Peso</label>
+                    <div class="col-lg-10">
+                        <input id="pesoInput" type="number" min="1" ng-model="parvulo.peso" class="form-control" placeholder="Ej: 69kg" >
+                    </div>
+                </div>
+                
+                <!--<div class="form-group">-->
+                <!--    <div class="col-lg-2">-->
+                <!--        <label> Eliminado </label>-->
+                <!--    </div>-->
+                <!--    <div class="col-lg-10">-->
+                <!--        <input class="sexo" ng-model="parvulo.eliminado" type="radio"  value="hombre"> Si-->
+                <!--        <input class="sexo" ng-model="parvulo.eliminado" type="radio"  value="mujer"> No-->
+                <!--    </div>-->
+                <!--</div>-->
+                
+                <div class="form-group">
+                    <div class="col-lg-3">
+                        <input type="submit" class="btn btn-primary" value="Registrar Parvulo">
+                    </div>
+                    <div class="col-lg-3">
+                        <a href="#/parvulo-gestionar" class="btn btn-default" >Cancelar</a>
+                    </div>
+                    <!--<div class="col-lg-offset-3 col-lg-3">-->
+                        <!--<input type="reset" class="btn btn-default" value="Limpiar">-->
+                    <!--</div>-->
+                    
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html ng-app="conejitoBlanco">
+    <head>
+        <title>Jardin Conejito Blanco</title>
+        <meta name="description" content="Jardin Infantil Conejito Blanco"/>
+        <meta name="viewport" content="width=device-width"/>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/lib/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/lib/toaster.css"/>
+        <link rel="stylesheet" href="css/main2.css"/>
+        <!--<script type="text/javascript" src="js/lib/jquery-2.1.4.min.js"></script>-->
+        <!--<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>-->
+        
+        <!--dependencias-->
+        <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>-->
+        <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.js"></script>-->
+        <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-resource.js"></script>-->
+        <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.js"></script>-->
+        
+        <script type="text/javascript" src="ng-app/libs/angular.js"></script>
+        <script type="text/javascript" src="ng-app/libs/angular-route.js"></script>
+        <script type="text/javascript" src="ng-app/libs/angular-resource.js"></script>
+        <script type="text/javascript" src="ng-app/libs/ngStorage.js"></script>
+        <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap.js"></script>-->
+        <script type="text/javascript" src="ng-app/libs/ui-bootstrap.js"></script>
+        <script type="text/javascript" src="ng-app/libs/angular-base64.min.js"></script>
+        <!--<script type="text/javascript" src="ng-app/libs/lodash.js"></script>-->
+        <!--<script type="text/javascript" src="ng-app/libs/restangular.js"></script>-->
+        <script type="text/javascript" src="ng-app/libs/angular-animate.js"></script>
+        <script type="text/javascript" src="ng-app/libs/toaster.js"></script>
+        <!--app scripts-->
+        <script type="text/javascript" src="ng-app/app.js"></script>
+        
+        <script type="text/javascript" src="ng-app/controllers/asistenciaController.js"></script>
+        <script type="text/javascript" src="ng-app/controllers/usuario.js"></script>
+        <script type="text/javascript" src="ng-app/controllers/parvulo.js"></script>
+        <script type="text/javascript" src="ng-app/controllers/educadora.js"></script>
+        <script type="text/javascript" src="ng-app/controllers/documento.js"></script>
+        <script type="text/javascript" src="ng-app/controllers/noticia.js"></script>
+        <script type="text/javascript" src="ng-app/controllers/galeriaController.js"></script>
+        <script type="text/javascript" src="ng-app/controllers/hitoController.js"></script>
+        <script type="text/javascript" src="ng-app/controllers/imprevisto.js"></script>
+        
+        <script type="text/javascript" src="ng-app/routes/asistenciaRoute.js"></script>
+        <script type="text/javascript" src="ng-app/routes/usuario.js"></script>
+        <script type="text/javascript" src="ng-app/routes/educadora.js"></script>
+        <script type="text/javascript" src="ng-app/routes/parvulo.js"></script>
+        <script type="text/javascript" src="ng-app/routes/paginas.js"></script>
+        <script type="text/javascript" src="ng-app/routes/documento.js"></script>
+        <script type="text/javascript" src="ng-app/routes/noticia.js"></script>
+        <script type="text/javascript" src="ng-app/routes/galeriaRoute.js"></script>
+        <script type="text/javascript" src="ng-app/routes/hitoRoute.js"></script>
+        <script type="text/javascript" src="ng-app/routes/imprevisto.js"></script>
+        
+        
+    </head>
+    <body>
+        <!--<h1 ng-controller="appController">{{$locationProvider.path}}</h1>-->
+        <div class="container-fluid">
+            <!--<div alerts></div>-->
+            
+            <!--<div ng-controller="alertController" style="position: fixed; top: 0; right: 0">-->
+            <!--    <uib-alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</uib-alert>-->
+            <!--</div>-->
+            <toaster-container toaster-options="{positionClass: 'toast-top-center', 'time-out': 5000, 'close-button':true}"></toaster-container>
+            
+            <div header></div>
+            <div navbar></div>
+            
+            <div class="row">
+        		
+    		    <div ng-show="$root.$storage.currentUser.isEducadora" menu.educadora></div>
+    		    <div ng-show="$root.$storage.currentUser.isParvulo" menu.parvulo></div>
+        		
+        		<div ng-class="{'col-xs-9': $root.$storage.currentUser.isEducadora || !$root.$storage.isLogged, 'col-xs-6': $root.$storage.currentUser.isParvulo }">
+    			    <div ng-view></div>
+        		</div>
+        		<div widget.enlaces.interes ng-hide="$root.$storage.currentUser.isEducadora"></div>
+        	</div>
+        </div>
+        
+        <!--<div ng-controller="UsuarioController">-->
+            <!--<pre><code>{{ $root.$storage.currentUser | json }}</code></pre>-->
+        <!--</div>-->
+    </body>
+</html>
